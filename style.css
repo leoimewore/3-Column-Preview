@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+* {box-sizing: border-box;}
+
+body {
+    background: whitesmoke;
+    font-size: 15px;
+    font-family: Lexend Deca;
+    font-weight: 900;
+    line-height: 1.5rem;
+    display: flex;
+
+    /* align-items: center;
+    justify-content: center; */
+}
+.car-type {
+    padding:1.5em;
+    background-color:hsl(31, 77%, 52%);
+    border: 1px solid Bright hsl(31, 77%, 52%);
+    color: #fff;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    
+    
+    
+    
+}
+.car-type.suv {
+    background-color: hsl(184, 100%, 22%);
+    border-radius: 0;
+    
+    
+}
+.car-type.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+div.flex-container {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    width: 100%;
+
+    /* height: 500px; */
+    /* justify-content: center; */
+    
+    
+    
+    
+    
+}
+.button {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    margin: 7em 7em 0 7em;
+    font-size: 16px;
+    font-weight:lighter;
+    font-family: cursive;
+    border-radius: 1000px;
+    background-color: whitesmoke;
+    border: none;
+    color: hsl(31, 77%, 52%);
+    cursor:pointer;
+    min-width: 130px;
+}
+.button:hover {
+    color: hsl(31, 90%, 20%);
+}
+
+.button.btn-suv {
+    color: hsl(184, 100%, 22%);
+}
+
+.button.btn-suv:hover {
+    color: hsl(184, 90%, 10%) 
+}
+.button.btn-luxury {
+    color: hsl(179, 100%, 13%);
+}
+.button.btn-luxury:hover {
+    color: hsl(179, 90%, 25%);
+}
+
+.text {
+    min-width: auto;
+}
+
+@media screen and (min-width:475px ) {
+    div.flex-container {
+      flex-direction: row;}
+    
+    
+    }
+
+
+    
+    
+    
+
+
+
+    
